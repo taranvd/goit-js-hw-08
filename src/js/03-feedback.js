@@ -26,8 +26,8 @@ function checkStatusLocalStorage() {
   if (savedResult) {
     const { email, message } = JSON.parse(savedResult);
 
-    textareaEl.value = message;
-    emailInputEl.value = email;
+    textareaEl.value = message || '';
+    emailInputEl.value = email || '';
   }
 }
 
